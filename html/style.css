@@ -1,3 +1,223 @@
+* {
+  /*to remove the default margin and setup the background color*/
+  margin: 0;
+  padding: 0;
+  background-color: rgb(194, 228, 229);
+}
+.grid-container {
+  /*the container is gonna take the entire width and height of the page*/
+  width: 100vw;
+  height: 100vw;
+  /*then specify for each part a different font style*/
+  font-family:'Times New Roman', Times, serif;
+  font-weight: normal;
+  font-size: 20px;
+  /*css grid layout to style the website*/
+  display: grid;
+  /*2 columns and 4 rows*/
+  grid-template-columns: 1fr;
+  grid-template-rows: 25vh 65vh 30vh;
+  /*to add gaps between the columns and rows*/
+  gap:10px;
+  /*to add gaps at the outer edges of the grid*/
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+/*specify the grid line numbers for the rows and columns*/
+.grid-container nav {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  font-family: 'Dancing Script', cursive;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  align-items: center;
+  font-weight: bold;
+  color: beige;
+}
+
+
+nav img {
+  width: 100px;
+  height: 100px;
+  padding: 20px;
+}
+
+.nav-links ul li {
+  list-style: none;
+  display: inline;
+  padding: 100px;
+  font-size: 40px;
+}
+
+.nav-links ul li a {
+  text-decoration: none;
+  
+}
+
+header {
+  grid-row-start: 1;
+  grid-row-end: 2;
+  /* border-style: solid white;
+  border-width: 5px; */
+}
+header .intro-to-page {
+  font-size: 50px;
+  font-weight: bold;
+  text-align: center;
+  padding: 30px;
+}
+h1 {
+  color: rgba(88, 53, 104, 0.808);
+}
+h3 {
+  color: rgb(160, 118, 160);
+  font-size: 45px;
+}
+
+main .table {
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+
 table, th, td {
-    border: 50px solid black;
-  }
+  border: 5px solid rgba(88, 53, 104, 0.808);
+  width: 50%;
+  height: 100px;
+  background-color: rgba(214, 208, 218, 0.808);
+  margin: 10%;
+
+}
+
+th {
+  font-size: 40px;
+  color: rgba(88, 53, 104, 0.808)
+}
+
+form input {
+  color: rgba(88, 53, 104, 0.808);
+}
+
+#tablepar {
+  margin-left: 10px;
+  padding: 15px;
+  color: rgb(160, 118, 160);
+  font-size: 50px;
+  font-weight: bold;
+}
+
+table input {
+  background-color: rgba(88, 53, 104, 0.808);
+  width: 500px;
+  height: 50px;
+}
+
+footer {
+  grid-row-start: 3;
+  grid-row-end: 4;
+}
+
+#contact-us-para {
+  margin: 10px;
+  padding: 15px;
+  color: rgb(160, 118, 160);
+  font-size: 50px;
+  font-weight: bold;
+}
+p {
+  padding: 15px;
+}
+#icons {
+  padding: 25px;
+  /* display: grid; */
+}
+.feedback {
+  margin: 10px;
+  padding: 15px;
+  color: rgb(160, 118, 160);
+  font-size: 50px;
+  font-weight: bold;
+}
+form input {
+  box-sizing: border-box;
+  width: 500px;
+  height: 150px;
+  background-color: rgba(214, 208, 218, 0.808);
+}
+#copyrights {
+  text-align: center;
+  font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* nav {
+  font-family: 'Dancing Script', cursive;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  align-items: center;
+}
+nav img {
+  width: 70px;
+  margin: 10px;
+}
+.nav-links ul li {
+  list-style: none;
+  display: inline;
+  padding: 10px;
+  font-size: 30px;
+  
+}
+.nav-links ul li a {
+  text-decoration: none;
+}
+.intro-to-page {
+  display: inline-block;
+  padding: 50%;
+}
+
+/* .grid-container {
+  display: grid;
+  grid-template-rows: 10% 30% 50% 25% 5%;
+  grid-row-gap: 15px;
+} */ 
