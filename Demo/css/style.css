@@ -88,6 +88,9 @@ table, th, td {
   margin: 10%;
 
 }
+#table {
+  margin: 0 auto;
+}
 
 th {
   font-size: 40px;
