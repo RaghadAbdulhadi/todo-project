@@ -1,10 +1,16 @@
 'use strict';
+//Enter your name
 var name = prompt('Please enter your Name');
-
+//Enter your gender
 var gender = prompt('What is your Gender (Male or Female)?')
-
+//Enter your age 
 var age = prompt('What is your age?');
 
+
+//If your age is less than or equal to zero -- age not acceptable
+//If you are a female -- Ms
+//If you are a male -- Mr
+//If not male or female -- alert and welcome without ms or mr
 if (age > 0) {
     var welcoming = confirm('Do you want to skip the welcoming message?')
     if (welcoming == false) {
